@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Button, Card } from "@heroui/react";
+import { Avatar, Button, Card, Chip } from "@heroui/react";
 import { FcLike } from 'react-icons/fc';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 import Image from 'next/image';
@@ -11,6 +11,7 @@ const CardC = ({ photo }) => {
             <Card.Header>
                 <div className="relative ">
                     <Image className='w-full h-80 object-cover object-center rounded-2xl' src={photo.imageUrl} alt='Image' height={100} width={200}/>
+                    <Chip color="accent" className='absolute top-3 right-3'>{photo.category}</Chip>
                 </div>
                 <Card.Title className='text-lg font-bold my-3'>{photo.title}</Card.Title>
 

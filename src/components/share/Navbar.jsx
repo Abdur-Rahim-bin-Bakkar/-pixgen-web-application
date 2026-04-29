@@ -14,7 +14,7 @@ const Navbar = () => {
 
             <div className="flex gap-5">
                 <Link className='font-medium' href={'/'}>Home</Link>
-                <Link className='font-medium' href={'/allphoto'}>Home</Link>
+                <Link className='font-medium' href={'/allphoto'}>All Photo</Link>
                 <Link className='font-medium' href={'/'}>Home</Link>
                 <Link className='font-medium' href={'/'}>Home</Link>
             </div>
